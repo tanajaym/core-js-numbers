@@ -122,21 +122,21 @@ function getAngleBetweenVectors(x1, y1, x2, y2) {
   return angle;
 }
 
-/**
- * Returns a last digit of a integer number.
- * The input parameter will always be greater than or equal to zero and will be in decimal notation.
- *
- * @param {number} value
- * @return {number}
- *
- * @example:
- *   100     => 0
- *    37     => 7
- *     5     => 5
- *     0     => 0
- */
-function getLastDigit(/* value */) {
-  throw new Error('Not implemented');
+// /**
+//  * Returns a last digit of a integer number.
+//  * The input parameter will always be greater than or equal to zero and will be in decimal notation.
+//  *
+//  * @param {number} value
+//  * @return {number}
+//  *
+//  * @example:
+//  *   100     => 0
+//  *    37     => 7
+//  *     5     => 5
+//  *     0     => 0
+//  */
+function getLastDigit(value) {
+  return value%10;
 }
 
 /**
