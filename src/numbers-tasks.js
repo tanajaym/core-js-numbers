@@ -7,51 +7,56 @@
  *                                                                                           *
  ******************************************************************************************* */
 
-/**
- * Returns an area of a rectangle given by width and height.
- *
- * @param {number} width
- * @param {number} height
- * @return {number}
- *
- * @example:
- *   5, 10 => 50
- *   5, 5  => 25
- */
-function getRectangleArea(/* width, height */) {
-  throw new Error('Not implemented');
+// /**
+//  * Returns an area of a rectangle given by width and height.
+//  *
+//  * @param {number} width
+//  * @param {number} height
+//  * @return {number}
+//  *
+//  * @example:
+//  *   5, 10 => 50
+//  *   5, 5  => 25
+//  */
+function getRectangleArea(width, height) {
+  return width * height; 
 }
+// getRectangleArea(10, 5);
 
-/**
- * Returns a circumference of circle given by radius.
- *
- * @param {number} radius
- * @return {number}
- *
- * @example:
- *   5    => 31.41592653589793
- *   3.14 => 19.729201864543903
- *   0    => 0
- */
-function getCircleCircumference(/* radius */) {
-  throw new Error('Not implemented');
-}
 
-/**
- * Returns an average of two given numbers.
- *
- * @param {number} value1
- * @param {number} value2
- * @return {number}
- *
- * @example:
- *   5, 5  => 5
- *  10, 0  => 5
- *  -3, 3  => 0
- */
-function getAverage(/* value1, value2 */) {
-  throw new Error('Not implemented');
+// /**
+//  * Returns a circumference of circle given by radius.
+//  *
+//  * @param {number} radius
+//  * @return {number}
+//  *
+//  * @example:
+//  *   5    => 31.41592653589793
+//  *   3.14 => 19.729201864543903
+//  *   0    => 0
+//  */
+function getCircleCircumference(r) {
+  return 2*Math.PI*r;
 }
+// getCircleCircumference(5);
+
+// /**
+//  * Returns an average of two given numbers.
+//  *
+//  * @param {number} value1
+//  * @param {number} value2
+//  * @return {number}
+//  *
+//  * @example:
+//  *   5, 5  => 5
+//  *  10, 0  => 5
+//  *  -3, 3  => 0
+//  */
+function getAverage(val1, val2) {
+  return (val1 + val2)/2;
+}
+// getAverage(5, 5);
+//сумма деленная на их кол-ва
 
 /**
  * Returns a distance between two points by cartesian coordinates.
