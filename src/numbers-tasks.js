@@ -139,19 +139,20 @@ function getLastDigit(value) {
   return value%10;
 }
 
-/**
- * Returns a number by given string representation.
- *
- * @param {string} value
- * @return {number}
- *
- * @example:
- *    '100'     => 100
- *     '37'     => 37
- * '-525.5'     => -525.5
- */
-function parseNumberFromString(/* value */) {
-  throw new Error('Not implemented');
+// /**
+//  * Returns a number by given string representation.
+//  *
+//  * @param {string} value
+//  * @return {number}
+//  *
+//  * @example:
+//  *    '100'     => 100
+//  *     '37'     => 37
+//  * '-525.5'     => -525.5
+//  */
+function parseNumberFromString(value) {
+  return +value;
+  //or return Number(value);
 }
 
 /**
