@@ -155,19 +155,19 @@ function parseNumberFromString(value) {
   //or return Number(value);
 }
 
-/**
- * Returns a diagonal length of the rectangular parallelepiped given by its sides a,b,c.
- *
- * @param {number} a
- * @param {number} b
- * @param {number} c
- * @return {number}
- *
- * @example:
- *   1,1,1   => 1.7320508075688772
- *   3,3,3   => 5.196152422706632
- *   1,2,3   => 3.741657386773941
- */
+// /**
+//  * Returns a diagonal length of the rectangular parallelepiped given by its sides a,b,c.
+//  *
+//  * @param {number} a
+//  * @param {number} b
+//  * @param {number} c
+//  * @return {number}
+//  *
+//  * @example:
+//  *   1,1,1   => 1.7320508075688772
+//  *   3,3,3   => 5.196152422706632
+//  *   1,2,3   => 3.741657386773941
+//  */
 function getParallelepipedDiagonal(a, b, c) {
   const A = Math.pow(a, 2);
   const B = Math.pow(b, 2);
@@ -192,8 +192,10 @@ function getParallelepipedDiagonal(a, b, c) {
  *   1678, 2  => 1700
  *   1678, 3  => 2000
  */
-function roundToPowerOfTen(/* num, pow */) {
-  throw new Error('Not implemented');
+function roundToPowerOfTen(num, pow) {
+  const tenPow = Math.pow(10,pow);
+  const numRound = Math.round(num/tenPow);  
+  return numRound*tenPow;
 }
 
 /**
