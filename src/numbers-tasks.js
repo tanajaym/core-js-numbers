@@ -409,18 +409,18 @@ function toPrecision(number, precision) {
   return number.toPrecision(precision);
 }
 
-/**
- * Returns the primitive value of a Number object.
- *
- * @param {Number} number
- * @return {number}
- *
- * @example:
- * new Number(5) => 5
- * Number(-5)    => -5
- */
-function getNumberValue(/* number */) {
-  throw new Error('Not implemented');
+// /**
+//  * Returns the primitive value of a Number object.
+//  *
+//  * @param {Number} number
+//  * @return {number}
+//  *
+//  * @example:
+//  * new Number(5) => 5
+//  * Number(-5)    => -5
+//  */
+function getNumberValue(number) {
+  return Number.valueOf(number);
 }
 
 /**
