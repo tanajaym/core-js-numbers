@@ -423,23 +423,24 @@ function getNumberValue(number) {
   return Number.valueOf(number);
 }
 
-/**
- * Returns a boolean value indicating whether the parameter is a number or not.
- *
- * @param {number} number
- * @return {boolean}
- *
- * @example:
- * Infinity => false
- * NaN      => false
- * 0        => true
- * 'a' / 1  => false
- * 'a'      => false
- * 5        => true
- * '5'      => false
- */
-function isNumber(/* number */) {
-  throw new Error('Not implemented');
+// /**
+//  * Returns a boolean value indicating whether the parameter is a number or not.
+//  *
+//  * @param {number} number
+//  * @return {boolean}
+//  *
+//  * @example:
+//  * Infinity => false
+//  * NaN      => false
+//  * 0        => true
+//  * 'a' / 1  => false
+//  * 'a'      => false
+//  * 5        => true
+//  * '5'      => false
+//  */
+function isNumber(number) {
+  if(typeof number === 'number') return true;
+  else return false;
 }
 
 /**
