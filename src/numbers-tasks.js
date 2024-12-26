@@ -578,22 +578,23 @@ function getIntegerPartNumber(number) {
 function getSumOfNumbers(x1, x2, x3) {
   const sum  = x1+x2+x3;
   return toFixed(1);
+  //for float numbers
 }
 
-/**
- * Returns the largest number.
- *
- * @param {number} firstNumber
- * @param {number} secondNumber
- * @return {number}
- *
- * @example:
- * 1, 2   => 2
- * -5, -6 => -5
- * 0, 5   => 5
- */
-function getMaxNumber(/* firstNumber, secondNumber */) {
-  throw new Error('Not implemented');
+// /**
+//  * Returns the largest number.
+//  *
+//  * @param {number} firstNumber
+//  * @param {number} secondNumber
+//  * @return {number}
+//  *
+//  * @example:
+//  * 1, 2   => 2
+//  * -5, -6 => -5
+//  * 0, 5   => 5
+//  */
+function getMaxNumber(firstNumber, secondNumber) {
+  return Math.max(firstNumber, secondNumber);
 }
 
 /**
