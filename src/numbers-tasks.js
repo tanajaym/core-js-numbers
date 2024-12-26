@@ -21,7 +21,6 @@
 function getRectangleArea(width, height) {
   return width * height; 
 }
-// getRectangleArea(10, 5);
 
 
 // /**
@@ -38,7 +37,6 @@ function getRectangleArea(width, height) {
 function getCircleCircumference(r) {
   return 2*Math.PI*r;
 }
-// getCircleCircumference(5);
 
 // /**
 //  * Returns an average of two given numbers.
@@ -55,7 +53,6 @@ function getCircleCircumference(r) {
 function getAverage(val1, val2) {
   return (val1 + val2)/2;
 }
-// getAverage(5, 5);
 //сумма деленная на их кол-ва
 
 // /**
@@ -76,7 +73,6 @@ function getAverage(val1, val2) {
 function getDistanceBetweenPoints( x1, y1, x2, y2 ) {
   return Math.sqrt(Math.pow((x1 - x2)) + Math.pow((y1 - y2)));
 }
-// getDistanceBetweenPoints(0,0,0,1);
 
 // /**
 //  * Returns a root of linear equation a*x + b = 0 given by coefficients a and b.
@@ -93,7 +89,6 @@ function getDistanceBetweenPoints( x1, y1, x2, y2 ) {
 function getLinearEquationRoot(a, b) {
   return -b/a;
 }
-// getLinearEquationRoot(1,8);
 
 // /**
 //  * Returns an angle (in radians) between two vectors given by xi and yi,
@@ -245,21 +240,23 @@ function toNumber(value, def) {
   if(Number(value) === isNaN(value)) res = def;
   else res = value;
   return res;
+
+  //return Number(value) || def;
 }
 
-/**
- * Returns the cube of the given number.
- *
- * @param {number} num
- * @return {number}
- *
- * @example:
- *   3  => 27
- *   -2 => -8
- *   0  => 0
- */
-function getCube(/* num */) {
-  throw new Error('Not implemented');
+// /**
+//  * Returns the cube of the given number.
+//  *
+//  * @param {number} num
+//  * @return {number}
+//  *
+//  * @example:
+//  *   3  => 27
+//  *   -2 => -8
+//  *   0  => 0
+//  */
+function getCube(num) {
+  return Math.pow(num, 3);
 }
 
 /**
