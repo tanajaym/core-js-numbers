@@ -299,19 +299,25 @@ function getSumToN(n) {
   return sum;
 }
 
-/**
- * Returns the sum of the digits of a given number.
- *
- * @param {number} num
- * @return {number}
- *
- * @example:
- *   123 => 6  // (1+2+3)
- *   202 => 4  // (2+0+2)
- *   5   => 5  // 5
- */
-function getSumOfDigits(/* num */) {
-  throw new Error('Not implemented');
+// /**
+//  * Returns the sum of the digits of a given number.
+//  *
+//  * @param {number} num
+//  * @return {number}
+//  *
+//  * @example:
+//  *   123 => 6  // (1+2+3)
+//  *   202 => 4  // (2+0+2)
+//  *   5   => 5  // 5
+//  */
+function getSumOfDigits(num) {
+  // return num < 10 ? num : getSumOfDigits(n%10 + getSumOfDigits(Math.floor(num/10)));
+  let res = 0;
+  if (typeof num !== 'string') num=num.toString();
+  if (num.length < 2) return parseInt(num);
+
+  res = getSumOfDigits(n.split('').reduce((acc, num)=>acc+=parseInt(num),0));
+  return res;
 }
 
 /**
