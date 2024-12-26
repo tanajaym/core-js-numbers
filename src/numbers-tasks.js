@@ -320,19 +320,19 @@ function getSumOfDigits(num) {
   return res;
 }
 
-/**
- * Returns true if the given number is a power of two, false otherwise.
- *
- * @param {number} num
- * @return {boolean}
- *
- * @example:
- *   4   => true
- *   16  => true
- *   15  => false
- */
-function isPowerOfTwo(/* num */) {
-  throw new Error('Not implemented');
+// /**
+//  * Returns true if the given number is a power of two, false otherwise.
+//  *
+//  * @param {number} num
+//  * @return {boolean}
+//  *
+//  * @example:
+//  *   4   => true
+//  *   16  => true
+//  *   15  => false
+//  */
+function isPowerOfTwo(num) {
+  return (Math.log(num)/Math.log(2)) % 1 === 0;
 }
 
 /**
