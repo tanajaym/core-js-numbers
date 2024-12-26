@@ -175,48 +175,54 @@ function getParallelepipedDiagonal(a, b, c) {
   return Math.sqrt(A+B+C);
 }
 
-/**
- * Returns the number rounded to specified power of 10.
- *
- * @param {number} num
- * @param {number} pow
- * @return {number}
- *
- * @example:
- *   1234, 0  => 1234
- *   1234, 1  => 1230
- *   1234, 2  => 1200
- *   1234, 3  => 1000
- *   1678, 0  => 1678
- *   1678, 1  => 1680
- *   1678, 2  => 1700
- *   1678, 3  => 2000
- */
+// /**
+//  * Returns the number rounded to specified power of 10.
+//  *
+//  * @param {number} num
+//  * @param {number} pow
+//  * @return {number}
+//  *
+//  * @example:
+//  *   1234, 0  => 1234
+//  *   1234, 1  => 1230
+//  *   1234, 2  => 1200
+//  *   1234, 3  => 1000
+//  *   1678, 0  => 1678
+//  *   1678, 1  => 1680
+//  *   1678, 2  => 1700
+//  *   1678, 3  => 2000
+//  */
 function roundToPowerOfTen(num, pow) {
   const tenPow = Math.pow(10,pow);
   const numRound = Math.round(num/tenPow);  
   return numRound*tenPow;
 }
 
-/**
- * Returns true is the number is prime; otherwise false.
- * See: https://en.wikipedia.org/wiki/Primality_test
- *
- * @param {number} n
- * @return {bool}
- *
- * @example:
- *   4 => false
- *   5 => true
- *   6 => false
- *   7 => true
- *   11 => true
- *   12 => false
- *   16 => false
- *   17 => true
- */
-function isPrime(/* n */) {
-  throw new Error('Not implemented');
+// /**
+//  * Returns true is the number is prime; otherwise false.
+//  * See: https://en.wikipedia.org/wiki/Primality_test
+//  *
+//  * @param {number} n
+//  * @return {bool}
+//  *
+//  * @example:
+//  *   4 => false
+//  *   5 => true
+//  *   6 => false
+//  *   7 => true
+//  *   11 => true
+//  *   12 => false
+//  *   16 => false
+//  *   17 => true
+//  */
+function isPrime(n) {
+  if(n <= 1) return false;
+  if(n === 2) return true;
+
+  for(let i = 3; i <= Math.sqrt(n); i += 2){
+    if (num%i === 0) return false;
+  }
+  return n%2 !== 0;
 }
 
 /**
